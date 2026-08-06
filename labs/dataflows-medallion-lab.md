@@ -4,7 +4,7 @@
 
 * Build a **Bronze → Silver → Gold medallion architecture** entirely with low-code
   **Dataflows Gen2** and **Power Query in Fabric**.
-* Use synthetic **Renishaw finance data** (GL actuals, budget, cost centre master, FX
+* Use synthetic **Renishaw finance data** (GL actuals (General Ledgers), budget, cost centre master, FX
   rates) as the working example.
 * Clean, standardise and currency-convert raw finance data in the **Silver** layer.
 * Build a curated **Actual vs Budget variance** table in the **Gold** layer, ready for
