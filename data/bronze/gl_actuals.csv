@@ -1,0 +1,188 @@
+transaction_id,period,cost_centre_id,cost_centre_name,account_code,account_name,account_category,description,currency,amount_local
+500001,2026-01-01,CC1001,Metrology Systems - UK Manufacturing,5000,Material Costs,Cost of Sales,Material Costs - Jan 2026,GBP,244865.48
+500002,2026-01-01,CC1001,Metrology Systems - UK Manufacturing,5100,Direct Labour,Cost of Sales,Direct Labour - Jan 2026,GBP,93438.17
+500003,2026-01-01,CC1001,Metrology Systems - UK Manufacturing,7000,Capital Expenditure,Capital Expenditure,Capital Expenditure - Jan 2026,GBP,5364.42
+500004,2026-02-01,CC1001,Metrology Systems - UK Manufacturing,5000,Material Costs,Cost of Sales,Material Costs - Feb 2026,GBP,131937.81
+500005,2026-02-01,CC1001,Metrology Systems - UK Manufacturing,5100,Direct Labour,Cost of Sales,Direct Labour - Feb 2026,GBP,136145.95
+500006,2026-02-01,CC1001,Metrology Systems - UK Manufacturing,7000,Capital Expenditure,Capital Expenditure,,GBP,35788.88
+500007,2026-03-01,CC1001,Metrology Systems - UK Manufacturing,5000,Material Costs,Cost of Sales,Material Costs - Mar 2026,GBP,235793.93
+500008,2026-03-01,CC1001,Metrology Systems - UK Manufacturing,5100,Direct Labour,Cost of Sales,Direct Labour - Mar 2026,GBP,129919.09
+500009,2026-03-01,CC1001,Metrology Systems - UK Manufacturing,7000,Capital Expenditure,Capital Expenditure,Capital Expenditure - Mar 2026,GBP,32559.77
+500010,2026-04-01,CC1001,Metrology Systems - UK Manufacturing,5000,Material Costs,Cost of Sales,Material Costs - Apr 2026,GBP,265460.71
+500011,2026-04-01,CC1001,Metrology Systems - UK Manufacturing,5100,Direct Labour,Cost of Sales,Direct Labour - Apr 2026,GBP,103892.93
+500012,2026-04-01,CC1001,Metrology Systems - UK Manufacturing,7000,Capital Expenditure,Capital Expenditure,Capital Expenditure - Apr 2026,GBP,34314.85
+500013,2026-05-01,CC1001,Metrology Systems - UK Manufacturing,5000,Material Costs,Cost of Sales,Material Costs - May 2026,GBP,250283.65
+500014,2026-05-01,CC1001,Metrology Systems - UK Manufacturing,5100,Direct Labour,Cost of Sales,Direct Labour - May 2026,GBP,126650.48
+500015,2026-05-01,CC1001,Metrology Systems - UK Manufacturing,7000,Capital Expenditure,Capital Expenditure,Capital Expenditure - May 2026,GBP,54804.56
+500016,2026-06-01,CC1001,Metrology Systems - UK Manufacturing,5000,Material Costs,Cost of Sales,Material Costs - Jun 2026,GBP,188779.54
+500017,2026-06-01,CC1001,Metrology Systems - UK Manufacturing  ,5100,Direct Labour,Cost of Sales,Direct Labour - Jun 2026,GBP,118783.8
+500018,2026-06-01,CC1001,Metrology Systems - UK Manufacturing,7000,Capital Expenditure,Capital Expenditure,Capital Expenditure - Jun 2026,GBP,2584.5
+500019,2026-01-01,CC1002,Metrology Systems - Europe Sales,4000,Product Revenue,Revenue,Product Revenue - Jan 2026,EUR,226246.55
+500020,2026-01-01,CC1002,Metrology Systems - Europe Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Jan 2026,EUR,30438.8
+500021,2026-01-01,CC1002,Metrology Systems - Europe Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Jan 2026,EUR,16767.58
+500022,2026-02-01,CC1002,Metrology Systems - Europe Sales,4000,Product Revenue,Revenue,Product Revenue - Feb 2026,EUR,233039.37
+500023,2026-02-01,CC1002,Metrology Systems - Europe Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Feb 2026,EUR,23751.58
+500024,2026-02-01,CC1002,Metrology Systems - Europe Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Feb 2026,EUR,23059.14
+500025,2026-03-01,CC1002,Metrology Systems - Europe Sales,4000,Product Revenue,Revenue,Product Revenue - Mar 2026,EUR,336555.04
+500026,2026-03-01,CC1002,Metrology Systems - Europe Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Mar 2026,EUR,35008.41
+500027,2026-03-01,CC1002,Metrology Systems - Europe Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Mar 2026,EUR,26418.69
+500028,2026-04-01,CC1002,Metrology Systems - Europe Sales,4000,Product Revenue,Revenue,Product Revenue - Apr 2026,EUR,238571.83
+500029,2026-04-01,CC1002,Metrology Systems - Europe Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Apr 2026,EUR,31783.56
+500030,2026-04-01,CC1002,Metrology Systems - Europe Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Apr 2026,EUR,44651.22
+500031,2026-05-01,CC1002,Metrology Systems - Europe Sales,4000,Product Revenue,Revenue,Product Revenue - May 2026,EUR,355660.2
+500032,2026-05-01,CC1002,Metrology Systems - Europe Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - May 2026,EUR,47027.15
+500033,2026-05-01,CC1002,Metrology Systems - Europe Sales,6100,Selling & Distribution,Operating Expense,SELLING & DISTRIBUTION - MAY 2026   ,EUR,21342.21
+500034,2026-06-01,CC1002,Metrology Systems - Europe Sales,4000,Product Revenue,Revenue,Product Revenue - Jun 2026,EUR,333691.01
+500035,2026-06-01,CC1002,Metrology Systems - Europe Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Jun 2026,EUR,24943.93
+500036,2026-06-01,CC1002,Metrology Systems - Europe Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Jun 2026,EUR,24800.64
+500037,2026-01-01,CC1003,Metrology Systems - Americas Sales,4000,Product Revenue,Revenue,Product Revenue - Jan 2026,USD,402456.12
+500038,2026-01-01,CC1003,Metrology Systems - Americas Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Jan 2026,USD,43958.39
+500039,2026-01-01,CC1003,Metrology Systems - Americas Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Jan 2026,USD,30566.99
+500040,2026-02-01,CC1003,Metrology Systems - Americas Sales,4000,Product Revenue,Revenue,Product Revenue - Feb 2026,USD,340175.73
+500041,2026-02-01,CC1003,Metrology Systems - Americas Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Feb 2026,USD,53069.51
+500042,2026-02-01,CC1003,Metrology Systems - Americas Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Feb 2026,USD,37820.64
+500043,2026-03-01,CC1003,Metrology Systems - Americas Sales,4000,Product Revenue,Revenue,Product Revenue - Mar 2026,USD,237791.2
+500044,2026-03-01,CC1003,Metrology Systems - Americas Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Mar 2026,USD,21539.42
+500045,2026-03-01,CC1003,Metrology Systems - Americas Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Mar 2026,USD,24757.15
+500046,2026-04-01,CC1003,Metrology Systems - Americas Sales,4000,Product Revenue,Revenue,Product Revenue - Apr 2026,USD,253051.09
+500047,2026-04-01,CC1003,Metrology Systems - Americas Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Apr 2026,USD,29463.13
+500048,2026-04-01,CC1003,Metrology Systems - Americas Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Apr 2026,USD,44845.63
+500049,2026-05-01,CC1003,Metrology Systems - Americas Sales,4000,Product Revenue,Revenue,Product Revenue - May 2026,USD,413747.92
+500050,2026-05-01,CC1003,Metrology Systems - Americas Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - May 2026,USD,34542.34
+500051,2026-05-01,CC1003,Metrology Systems - Americas Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - May 2026,USD,36742.95
+500052,2026-06-01,CC1003,Metrology Systems - Americas Sales,4000,Product Revenue,Revenue,Product Revenue - Jun 2026,USD,258454.56
+500053,2026-06-01,CC1003,Metrology Systems - Americas Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Jun 2026,USD,53186.99
+500054,2026-06-01,CC1003,Metrology Systems - Americas Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Jun 2026,USD,27039.62
+500055,2026-01-01,CC1004,Analytical Instruments - UK R&D,6000,Research & Development,Operating Expense,Research & Development - Jan 2026,GBP,119954.78
+500056,2026-01-01,CC1004,Analytical Instruments - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - Jan 2026,GBP,50447.45
+500057,2026-02-01,CC1004,Analytical Instruments - UK R&D,6000,Research & Development,Operating Expense,Research & Development - Feb 2026,GBP,161022.12
+500058,2026-02-01,CC1004,Analytical Instruments - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - Feb 2026,GBP,52499.44
+500059,2026-03-01,CC1004,Analytical Instruments - UK R&D,6000,Research & Development,Operating Expense,Research & Development - Mar 2026,GBP,167988.13
+500060,2026-03-01,CC1004,Analytical Instruments - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - Mar 2026,GBP,85909.84
+500061,2026-04-01,CC1004,Analytical Instruments - UK R&D,6000,Research & Development,Operating Expense,Research & Development - Apr 2026,GBP,147031.26
+500062,2026-04-01,CC1004,Analytical Instruments - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - Apr 2026,GBP,52800.82
+500063,2026-05-01,CC1004,Analytical Instruments - UK R&D,6000,Research & Development,Operating Expense,Research & Development - May 2026,GBP,232860.68
+500064,2026-05-01,CC1004,Analytical Instruments - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - May 2026,GBP,69404.89
+500065,2026-06-01,CC1004,Analytical Instruments - UK R&D,6000,Research & Development,Operating Expense,Research & Development - Jun 2026,GBP,95709.13
+500066,2026-06-01,CC1004,Analytical Instruments - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - Jun 2026,GBP,39814.47
+500067,2026-01-01,CC1005,Analytical Instruments - APAC Sales,4000,Product Revenue,Revenue,Product Revenue - Jan 2026,JPY,198888.42
+500068,2026-01-01,CC1005,Analytical Instruments - APAC Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Jan 2026,JPY,43474.32
+500069,2026-01-01,CC1005,Analytical Instruments - APAC Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Jan 2026,JPY,37366.94
+500070,2026-02-01,CC1005,Analytical Instruments - APAC Sales,4000,Product Revenue,Revenue,Product Revenue - Feb 2026,JPY,277942.57
+500071,2026-02-01,CC1005,Analytical Instruments - APAC Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Feb 2026,JPY,22270.61
+500072,2026-02-01,CC1005,Analytical Instruments - APAC Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Feb 2026,JPY,26131.2
+500073,2026-03-01,CC1005,Analytical Instruments - APAC Sales,4000,Product Revenue,Revenue,Product Revenue - Mar 2026,JPY,424097.96
+500074,2026-03-01,CC1005,Analytical Instruments - APAC Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Mar 2026,JPY,41658.55
+500075,2026-03-01,CC1005,Analytical Instruments - APAC Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Mar 2026,JPY,44661.94
+500076,2026-04-01,CC1005,Analytical Instruments - APAC Sales,4000,Product Revenue,Revenue,Product Revenue - Apr 2026,JPY,400504.27
+500077,2026-04-01,CC1005,Analytical Instruments - APAC Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Apr 2026,JPY,21195.77
+500078,2026-04-01,CC1005,Analytical Instruments - APAC Sales  ,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Apr 2026,JPY,37940.03
+500079,2026-05-01,CC1005,Analytical Instruments - APAC Sales,4000,Product Revenue,Revenue,Product Revenue - May 2026,JPY,364227.12
+500080,2026-05-01,CC1005,Analytical Instruments - APAC Sales,4100,Service & Calibration Revenue,Revenue,SERVICE & CALIBRATION REVENUE - MAY 2026   ,JPY,43967.54
+500081,2026-05-01,CC1005,Analytical Instruments - APAC Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - May 2026,JPY,24385.04
+500082,2026-06-01,CC1005,Analytical Instruments - APAC Sales,4000,Product Revenue,Revenue,Product Revenue - Jun 2026,JPY,313800.98
+500083,2026-06-01,CC1005,Analytical Instruments - APAC Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Jun 2026,JPY,22994.36
+500084,2026-06-01,CC1005,Analytical Instruments - APAC Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Jun 2026,JPY,26360.38
+500085,2026-01-01,CC2001,Neuro Solutions - UK R&D,6000,Research & Development,Operating Expense,Research & Development - Jan 2026,GBP,143620.65
+500086,2026-01-01,CC2001,Neuro Solutions - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - Jan 2026,GBP,84533.93
+500087,2026-02-01,CC2001,Neuro Solutions - UK R&D,6000,Research & Development,Operating Expense,Research & Development - Feb 2026,GBP,201414.55
+500088,2026-02-01,CC2001,Neuro Solutions - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - Feb 2026,GBP,52531.42
+500089,2026-03-01,CC2001,Neuro Solutions - UK R&D,6000,Research & Development,Operating Expense,Research & Development - Mar 2026,GBP,156937.11
+500090,2026-03-01,CC2001,Neuro Solutions - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - Mar 2026,GBP,49519.79
+500091,2026-04-01,CC2001,Neuro Solutions - UK R&D,6000,Research & Development,Operating Expense,Research & Development - Apr 2026,GBP,216152.72
+500092,2026-04-01,CC2001,Neuro Solutions - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - Apr 2026,GBP,86532.86
+500093,2026-05-01,CC2001,Neuro Solutions - UK R&D,6000,Research & Development,Operating Expense,Research & Development - May 2026,GBP,136525.69
+500094,2026-05-01,CC2001,Neuro Solutions - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - May 2026,GBP,76264.32
+500095,2026-06-01,CC2001,Neuro Solutions - UK R&D,6000,Research & Development,Operating Expense,Research & Development - Jun 2026,GBP,159016.16
+500096,2026-06-01,CC2001,Neuro Solutions - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - Jun 2026,GBP,44783.45
+500097,2026-01-01,CC2002,Neuro Solutions - Americas Sales,4000,Product Revenue,Revenue,Product Revenue - Jan 2026,USD,349934.5
+500098,2026-01-01,CC2002,Neuro Solutions - Americas Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Jan 2026,USD,40078.46
+500099,2026-01-01,CC2002,Neuro Solutions - Americas Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Jan 2026,USD,36977.88
+500100,2026-02-01,CC2002,Neuro Solutions - Americas Sales,4000,Product Revenue,Revenue,Product Revenue - Feb 2026,USD,303597.46
+500101,2026-02-01,CC2002,Neuro Solutions - Americas Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Feb 2026,USD,19782.6
+500102,2026-02-01,CC2002,Neuro Solutions - Americas Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Feb 2026,USD,24427.99
+500103,2026-03-01,CC2002,Neuro Solutions - Americas Sales,4000,Product Revenue,Revenue,Product Revenue - Mar 2026,USD,186890.51
+500104,2026-03-01,CC2002,Neuro Solutions - Americas Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Mar 2026,USD,57849.91
+500105,2026-03-01,CC2002,Neuro Solutions - Americas Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Mar 2026,USD,41858.0
+500106,2026-04-01,CC2002,Neuro Solutions - Americas Sales,4000,Product Revenue,Revenue,Product Revenue - Apr 2026,USD,393265.32
+500107,2026-04-01,CC2002,Neuro Solutions - Americas Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Apr 2026,USD,33463.39
+500108,2026-04-01,CC2002,Neuro Solutions - Americas Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Apr 2026,USD,17340.31
+500109,2026-05-01,CC2002,Neuro Solutions - Americas Sales,4000,Product Revenue,Revenue,Product Revenue - May 2026,USD,414165.64
+500110,2026-05-01,CC2002,Neuro Solutions - Americas Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - May 2026,USD,61350.66
+500111,2026-05-01,CC2002,Neuro Solutions - Americas Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - May 2026,USD,18623.78
+500112,2026-06-01,CC2002,Neuro Solutions - Americas Sales,4000,Product Revenue,Revenue,Product Revenue - Jun 2026,USD,278839.45
+500113,2026-06-01,CC2002,Neuro Solutions - Americas Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Jun 2026,USD,21402.39
+500114,2026-06-01,CC2002,Neuro Solutions - Americas Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Jun 2026,USD,35548.98
+500115,2026-01-01,CC3001,Additive Manufacturing - UK Production,5000,Material Costs,Cost of Sales,Material Costs - Jan 2026,GBP,219037.01
+500116,2026-01-01,CC3001,Additive Manufacturing - UK Production,5100,Direct Labour,Cost of Sales,Direct Labour - Jan 2026,GBP,77381.55
+500117,2026-01-01,CC3001,Additive Manufacturing - UK Production,7000,Capital Expenditure,Capital Expenditure,Capital Expenditure - Jan 2026,GBP,27490.33
+500118,2026-02-01,CC3001,Additive Manufacturing - UK Production,5000,Material Costs,Cost of Sales,Material Costs - Feb 2026,GBP,194608.83
+500119,2026-02-01,CC3001,Additive Manufacturing - UK Production,5100,Direct Labour,Cost of Sales,Direct Labour - Feb 2026,GBP,90110.08
+500120,2026-02-01,CC3001,Additive Manufacturing - UK Production,7000,Capital Expenditure,Capital Expenditure,Capital Expenditure - Feb 2026,GBP,51717.83
+500121,2026-03-01,CC3001,Additive Manufacturing - UK Production,5000,Material Costs,Cost of Sales,Material Costs - Mar 2026,GBP,181390.18
+500122,2026-03-01,CC3001,Additive Manufacturing - UK Production,5100,Direct Labour,Cost of Sales,Direct Labour - Mar 2026,GBP,87987.18
+500123,2026-03-01,CC3001,Additive Manufacturing - UK Production,7000,Capital Expenditure,Capital Expenditure,Capital Expenditure - Mar 2026,GBP,32746.06
+500124,2026-04-01,CC3001,Additive Manufacturing - UK Production,5000,Material Costs,Cost of Sales,Material Costs - Apr 2026,GBP,230189.2
+500125,2026-04-01,CC3001,Additive Manufacturing - UK Production,5100,Direct Labour,Cost of Sales,Direct Labour - Apr 2026,GBP,89191.4
+500126,2026-04-01,CC3001,Additive Manufacturing - UK Production,7000,Capital Expenditure,Capital Expenditure,Capital Expenditure - Apr 2026,GBP,19376.28
+500127,2026-05-01,CC3001,Additive Manufacturing - UK Production,5000,Material Costs,Cost of Sales,MATERIAL COSTS - MAY 2026   ,GBP,274880.16
+500128,2026-05-01,CC3001,Additive Manufacturing - UK Production,5100,Direct Labour,Cost of Sales,Direct Labour - May 2026,GBP,129309.66
+500129,2026-05-01,CC3001,Additive Manufacturing - UK Production,7000,Capital Expenditure,Capital Expenditure,Capital Expenditure - May 2026,GBP,27863.17
+500130,2026-06-01,CC3001,Additive Manufacturing - UK Production,5000,Material Costs,Cost of Sales,Material Costs - Jun 2026,GBP,180912.98
+500131,2026-06-01,CC3001,Additive Manufacturing - UK Production,5100,Direct Labour,Cost of Sales,Direct Labour - Jun 2026,GBP,74899.52
+500132,2026-06-01,CC3001,Additive Manufacturing - UK Production,7000,Capital Expenditure,Capital Expenditure,Capital Expenditure - Jun 2026,GBP,12672.93
+500133,2026-01-01,CC3002,Additive Manufacturing - Europe Sales,4000,Product Revenue,Revenue,Product Revenue - Jan 2026,EUR,251739.48
+500134,2026-01-01,CC3002,Additive Manufacturing - Europe Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Jan 2026,EUR,41965.18
+500135,2026-01-01,CC3002,Additive Manufacturing - Europe Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Jan 2026,EUR,21114.92
+500136,2026-02-01,CC3002,Additive Manufacturing - Europe Sales,4000,Product Revenue,Revenue,Product Revenue - Feb 2026,EUR,230057.95
+500137,2026-02-01,CC3002,Additive Manufacturing - Europe Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Feb 2026,EUR,22565.65
+500138,2026-02-01,CC3002,Additive Manufacturing - Europe Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Feb 2026,EUR,33525.89
+500139,2026-03-01,CC3002,Additive Manufacturing - Europe Sales  ,4000,Product Revenue,Revenue,Product Revenue - Mar 2026,EUR,237765.38
+500140,2026-03-01,CC3002,Additive Manufacturing - Europe Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Mar 2026,EUR,56891.4
+500141,2026-03-01,CC3002,Additive Manufacturing - Europe Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Mar 2026,EUR,41278.53
+500142,2026-04-01,CC3002,Additive Manufacturing - Europe Sales,4000,Product Revenue,Revenue,Product Revenue - Apr 2026,EUR,204097.97
+500143,2026-04-01,CC3002,Additive Manufacturing - Europe Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Apr 2026,EUR,30582.91
+500144,2026-04-01,CC3002,Additive Manufacturing - Europe Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Apr 2026,EUR,36331.83
+500145,2026-05-01,CC3002,Additive Manufacturing - Europe Sales,4000,Product Revenue,Revenue,Product Revenue - May 2026,EUR,245301.84
+500146,2026-05-01,CC3002,Additive Manufacturing - Europe Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - May 2026,EUR,26810.02
+500147,2026-05-01,CC3002,Additive Manufacturing - Europe Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - May 2026,EUR,45649.35
+500148,2026-06-01,CC3002,Additive Manufacturing - Europe Sales,4000,Product Revenue,Revenue,Product Revenue - Jun 2026,EUR,298027.32
+500149,2026-06-01,CC3002,Additive Manufacturing - Europe Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Jun 2026,EUR,36572.43
+500150,2026-06-01,CC3002,Additive Manufacturing - Europe Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Jun 2026,EUR,36226.27
+500151,2026-01-01,CC4001,Raman Spectroscopy - UK R&D,6000,Research & Development,Operating Expense,Research & Development - Jan 2026,GBP,187955.52
+500152,2026-01-01,CC4001,Raman Spectroscopy - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - Jan 2026,GBP,47737.76
+500153,2026-02-01,CC4001,Raman Spectroscopy - UK R&D,6000,Research & Development,Operating Expense,Research & Development - Feb 2026,GBP,101369.79
+500154,2026-02-01,CC4001,Raman Spectroscopy - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - Feb 2026,GBP,60813.93
+500155,2026-03-01,CC4001,Raman Spectroscopy - UK R&D,6000,Research & Development,Operating Expense,Research & Development - Mar 2026,GBP,146806.0
+500156,2026-03-01,CC4001,Raman Spectroscopy - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - Mar 2026,GBP,64111.45
+500157,2026-04-01,CC4001,Raman Spectroscopy - UK R&D,6000,Research & Development,Operating Expense,Research & Development - Apr 2026,GBP,191431.94
+500158,2026-04-01,CC4001,Raman Spectroscopy - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - Apr 2026,GBP,76320.28
+500159,2026-05-01,CC4001,Raman Spectroscopy - UK R&D,6000,Research & Development,Operating Expense,Research & Development - May 2026,GBP,231017.97
+500160,2026-05-01,CC4001,Raman Spectroscopy - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - May 2026,GBP,47616.15
+500161,2026-06-01,CC4001,Raman Spectroscopy - UK R&D,6000,Research & Development,Operating Expense,Research & Development - Jun 2026,GBP,133800.32
+500162,2026-06-01,CC4001,Raman Spectroscopy - UK R&D,5100,Direct Labour,Cost of Sales,Direct Labour - Jun 2026,GBP,53547.22
+500163,2026-01-01,CC4002,Raman Spectroscopy - APAC Sales,4000,Product Revenue,Revenue,Product Revenue - Jan 2026,JPY,372876.56
+500164,2026-01-01,CC4002,Raman Spectroscopy - APAC Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Jan 2026,JPY,28868.19
+500165,2026-01-01,CC4002,Raman Spectroscopy - APAC Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Jan 2026,JPY,19960.84
+500166,2026-02-01,CC4002,Raman Spectroscopy - APAC Sales,4000,Product Revenue,Revenue,Product Revenue - Feb 2026,JPY,284215.24
+500167,2026-02-01,CC4002,Raman Spectroscopy - APAC Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Feb 2026,JPY,36432.76
+500168,2026-02-01,CC4002,Raman Spectroscopy - APAC Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Feb 2026,JPY,23076.08
+500169,2026-03-01,CC4002,Raman Spectroscopy - APAC Sales,4000,Product Revenue,Revenue,Product Revenue - Mar 2026,JPY,242832.99
+500170,2026-03-01,CC4002,Raman Spectroscopy - APAC Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Mar 2026,JPY,57613.79
+500171,2026-03-01,CC4002,Raman Spectroscopy - APAC Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Mar 2026,JPY,28633.45
+500172,2026-04-01,CC4002,Raman Spectroscopy - APAC Sales,4000,Product Revenue,Revenue,Product Revenue - Apr 2026,JPY,400645.84
+500173,2026-04-01,CC4002,Raman Spectroscopy - APAC Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Apr 2026,JPY,43525.48
+500174,2026-04-01,CC4002,Raman Spectroscopy - APAC Sales,6100,Selling & Distribution,Operating Expense,SELLING & DISTRIBUTION - APR 2026   ,JPY,17112.29
+500175,2026-05-01,CC4002,Raman Spectroscopy - APAC Sales,4000,Product Revenue,Revenue,Product Revenue - May 2026,JPY,445017.46
+500176,2026-05-01,CC4002,Raman Spectroscopy - APAC Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - May 2026,JPY,56647.57
+500177,2026-05-01,CC4002,Raman Spectroscopy - APAC Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - May 2026,JPY,46714.08
+500178,2026-06-01,CC4002,Raman Spectroscopy - APAC Sales,4000,Product Revenue,Revenue,Product Revenue - Jun 2026,JPY,378188.39
+500179,2026-06-01,CC4002,Raman Spectroscopy - APAC Sales,4100,Service & Calibration Revenue,Revenue,Service & Calibration Revenue - Jun 2026,JPY,50710.96
+500180,2026-06-01,CC4002,Raman Spectroscopy - APAC Sales,6100,Selling & Distribution,Operating Expense,Selling & Distribution - Jun 2026,JPY,18789.97
+500181,2026-01-01,CC9001,Corporate Functions - UK Head Office,6200,Administrative Expense,Operating Expense,Administrative Expense - Jan 2026,GBP,196097.38
+500182,2026-02-01,CC9001,Corporate Functions - UK Head Office,6200,Administrative Expense,Operating Expense,Administrative Expense - Feb 2026,GBP,171430.06
+500183,2026-03-01,CC9001,Corporate Functions - UK Head Office,6200,Administrative Expense,Operating Expense,Administrative Expense - Mar 2026,GBP,196443.81
+500184,2026-04-01,CC9001,Corporate Functions - UK Head Office,6200,Administrative Expense,Operating Expense,Administrative Expense - Apr 2026,GBP,162082.09
+500185,2026-05-01,CC9001,Corporate Functions - UK Head Office,6200,Administrative Expense,Operating Expense,Administrative Expense - May 2026,GBP,203188.27
+500186,2026-06-01,CC9001,Corporate Functions - UK Head Office,6200,Administrative Expense,Operating Expense,Administrative Expense - Jun 2026,GBP,242880.93
+500011,2026-04-01,CC1001,Metrology Systems - UK Manufacturing,5100,Direct Labour,Cost of Sales,Direct Labour - Apr 2026,GBP,103892.93

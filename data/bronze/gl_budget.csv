@@ -1,0 +1,187 @@
+cost_centre_id,period,account_code,account_name,account_category,budget_amount_gbp
+CC1001,2026-01-01,5000,Material Costs,Cost of Sales,190000
+CC1001,2026-01-01,5100,Direct Labour,Cost of Sales,110000
+CC1001,2026-01-01,7000,Capital Expenditure,Capital Expenditure,25000
+CC1001,2026-02-01,5000,Material Costs,Cost of Sales,190000
+CC1001,2026-02-01,5100,Direct Labour,Cost of Sales,110000
+CC1001,2026-02-01,7000,Capital Expenditure,Capital Expenditure,25000
+CC1001,2026-03-01,5000,Material Costs,Cost of Sales,190000
+CC1001,2026-03-01,5100,Direct Labour,Cost of Sales,110000
+CC1001,2026-03-01,7000,Capital Expenditure,Capital Expenditure,25000
+CC1001,2026-04-01,5000,Material Costs,Cost of Sales,190000
+CC1001,2026-04-01,5100,Direct Labour,Cost of Sales,110000
+CC1001,2026-04-01,7000,Capital Expenditure,Capital Expenditure,25000
+CC1001,2026-05-01,5000,Material Costs,Cost of Sales,190000
+CC1001,2026-05-01,5100,Direct Labour,Cost of Sales,110000
+CC1001,2026-05-01,7000,Capital Expenditure,Capital Expenditure,25000
+CC1001,2026-06-01,5000,Material Costs,Cost of Sales,190000
+CC1001,2026-06-01,5100,Direct Labour,Cost of Sales,110000
+CC1001,2026-06-01,7000,Capital Expenditure,Capital Expenditure,25000
+CC1002,2026-01-01,4000,Product Revenue,Revenue,300000
+CC1002,2026-01-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1002,2026-01-01,6100,Selling & Distribution,Operating Expense,30000
+CC1002,2026-02-01,4000,Product Revenue,Revenue,300000
+CC1002,2026-02-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1002,2026-02-01,6100,Selling & Distribution,Operating Expense,30000
+CC1002,2026-03-01,4000,Product Revenue,Revenue,300000
+CC1002,2026-03-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1002,2026-03-01,6100,Selling & Distribution,Operating Expense,30000
+CC1002,2026-04-01,4000,Product Revenue,Revenue,300000
+CC1002,2026-04-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1002,2026-04-01,6100,Selling & Distribution,Operating Expense,30000
+CC1002,2026-05-01,4000,Product Revenue,Revenue,300000
+CC1002,2026-05-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1002,2026-05-01,6100,Selling & Distribution,Operating Expense,30000
+CC1002,2026-06-01,4000,Product Revenue,Revenue,300000
+CC1002,2026-06-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1002,2026-06-01,6100,Selling & Distribution,Operating Expense,30000
+CC1003,2026-01-01,4000,Product Revenue,Revenue,300000
+CC1003,2026-01-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1003,2026-01-01,6100,Selling & Distribution,Operating Expense,30000
+CC1003,2026-02-01,4000,Product Revenue,Revenue,300000
+CC1003,2026-02-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1003,2026-02-01,6100,Selling & Distribution,Operating Expense,30000
+CC1003,2026-03-01,4000,Product Revenue,Revenue,300000
+CC1003,2026-03-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1003,2026-03-01,6100,Selling & Distribution,Operating Expense,30000
+CC1003,2026-04-01,4000,Product Revenue,Revenue,300000
+CC1003,2026-04-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1003,2026-04-01,6100,Selling & Distribution,Operating Expense,30000
+CC1003,2026-05-01,4000,Product Revenue,Revenue,300000
+CC1003,2026-05-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1003,2026-05-01,6100,Selling & Distribution,Operating Expense,30000
+CC1003,2026-06-01,4000,Product Revenue,Revenue,300000
+CC1003,2026-06-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1003,2026-06-01,6100,Selling & Distribution,Operating Expense,30000
+CC1004,2026-01-01,6000,Research & Development,Operating Expense,150000
+CC1004,2026-01-01,5100,Direct Labour,Cost of Sales,65000
+CC1004,2026-02-01,6000,Research & Development,Operating Expense,150000
+CC1004,2026-02-01,5100,Direct Labour,Cost of Sales,65000
+CC1004,2026-03-01,6000,Research & Development,Operating Expense,150000
+CC1004,2026-03-01,5100,Direct Labour,Cost of Sales,65000
+CC1004,2026-04-01,6000,Research & Development,Operating Expense,150000
+CC1004,2026-04-01,5100,Direct Labour,Cost of Sales,65000
+CC1004,2026-05-01,6000,Research & Development,Operating Expense,150000
+CC1004,2026-05-01,5100,Direct Labour,Cost of Sales,65000
+CC1004,2026-06-01,6000,Research & Development,Operating Expense,150000
+CC1004,2026-06-01,5100,Direct Labour,Cost of Sales,65000
+CC1005,2026-01-01,4000,Product Revenue,Revenue,300000
+CC1005,2026-01-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1005,2026-01-01,6100,Selling & Distribution,Operating Expense,30000
+CC1005,2026-02-01,4000,Product Revenue,Revenue,300000
+CC1005,2026-02-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1005,2026-02-01,6100,Selling & Distribution,Operating Expense,30000
+CC1005,2026-03-01,4000,Product Revenue,Revenue,300000
+CC1005,2026-03-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1005,2026-03-01,6100,Selling & Distribution,Operating Expense,30000
+CC1005,2026-04-01,4000,Product Revenue,Revenue,300000
+CC1005,2026-04-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1005,2026-04-01,6100,Selling & Distribution,Operating Expense,30000
+CC1005,2026-05-01,4000,Product Revenue,Revenue,300000
+CC1005,2026-05-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1005,2026-05-01,6100,Selling & Distribution,Operating Expense,30000
+CC1005,2026-06-01,4000,Product Revenue,Revenue,300000
+CC1005,2026-06-01,4100,Service & Calibration Revenue,Revenue,38000
+CC1005,2026-06-01,6100,Selling & Distribution,Operating Expense,30000
+CC2001,2026-01-01,6000,Research & Development,Operating Expense,150000
+CC2001,2026-01-01,5100,Direct Labour,Cost of Sales,65000
+CC2001,2026-02-01,6000,Research & Development,Operating Expense,150000
+CC2001,2026-02-01,5100,Direct Labour,Cost of Sales,65000
+CC2001,2026-03-01,6000,Research & Development,Operating Expense,150000
+CC2001,2026-03-01,5100,Direct Labour,Cost of Sales,65000
+CC2001,2026-04-01,6000,Research & Development,Operating Expense,150000
+CC2001,2026-04-01,5100,Direct Labour,Cost of Sales,65000
+CC2001,2026-05-01,6000,Research & Development,Operating Expense,150000
+CC2001,2026-05-01,5100,Direct Labour,Cost of Sales,65000
+CC2001,2026-06-01,6000,Research & Development,Operating Expense,150000
+CC2001,2026-06-01,5100,Direct Labour,Cost of Sales,65000
+CC2002,2026-01-01,4000,Product Revenue,Revenue,300000
+CC2002,2026-01-01,4100,Service & Calibration Revenue,Revenue,38000
+CC2002,2026-01-01,6100,Selling & Distribution,Operating Expense,30000
+CC2002,2026-02-01,4000,Product Revenue,Revenue,300000
+CC2002,2026-02-01,4100,Service & Calibration Revenue,Revenue,38000
+CC2002,2026-02-01,6100,Selling & Distribution,Operating Expense,30000
+CC2002,2026-03-01,4000,Product Revenue,Revenue,300000
+CC2002,2026-03-01,4100,Service & Calibration Revenue,Revenue,38000
+CC2002,2026-03-01,6100,Selling & Distribution,Operating Expense,30000
+CC2002,2026-04-01,4000,Product Revenue,Revenue,300000
+CC2002,2026-04-01,4100,Service & Calibration Revenue,Revenue,38000
+CC2002,2026-04-01,6100,Selling & Distribution,Operating Expense,30000
+CC2002,2026-05-01,4000,Product Revenue,Revenue,300000
+CC2002,2026-05-01,4100,Service & Calibration Revenue,Revenue,38000
+CC2002,2026-05-01,6100,Selling & Distribution,Operating Expense,30000
+CC2002,2026-06-01,4000,Product Revenue,Revenue,300000
+CC2002,2026-06-01,4100,Service & Calibration Revenue,Revenue,38000
+CC2002,2026-06-01,6100,Selling & Distribution,Operating Expense,30000
+CC3001,2026-01-01,5000,Material Costs,Cost of Sales,190000
+CC3001,2026-01-01,5100,Direct Labour,Cost of Sales,110000
+CC3001,2026-01-01,7000,Capital Expenditure,Capital Expenditure,25000
+CC3001,2026-02-01,5000,Material Costs,Cost of Sales,190000
+CC3001,2026-02-01,5100,Direct Labour,Cost of Sales,110000
+CC3001,2026-02-01,7000,Capital Expenditure,Capital Expenditure,25000
+CC3001,2026-03-01,5000,Material Costs,Cost of Sales,190000
+CC3001,2026-03-01,5100,Direct Labour,Cost of Sales,110000
+CC3001,2026-03-01,7000,Capital Expenditure,Capital Expenditure,25000
+CC3001,2026-04-01,5000,Material Costs,Cost of Sales,190000
+CC3001,2026-04-01,5100,Direct Labour,Cost of Sales,110000
+CC3001,2026-04-01,7000,Capital Expenditure,Capital Expenditure,25000
+CC3001,2026-05-01,5000,Material Costs,Cost of Sales,190000
+CC3001,2026-05-01,5100,Direct Labour,Cost of Sales,110000
+CC3001,2026-05-01,7000,Capital Expenditure,Capital Expenditure,25000
+CC3001,2026-06-01,5000,Material Costs,Cost of Sales,190000
+CC3001,2026-06-01,5100,Direct Labour,Cost of Sales,110000
+CC3001,2026-06-01,7000,Capital Expenditure,Capital Expenditure,25000
+CC3002,2026-01-01,4000,Product Revenue,Revenue,300000
+CC3002,2026-01-01,4100,Service & Calibration Revenue,Revenue,38000
+CC3002,2026-01-01,6100,Selling & Distribution,Operating Expense,30000
+CC3002,2026-02-01,4000,Product Revenue,Revenue,300000
+CC3002,2026-02-01,4100,Service & Calibration Revenue,Revenue,38000
+CC3002,2026-02-01,6100,Selling & Distribution,Operating Expense,30000
+CC3002,2026-03-01,4000,Product Revenue,Revenue,300000
+CC3002,2026-03-01,4100,Service & Calibration Revenue,Revenue,38000
+CC3002,2026-03-01,6100,Selling & Distribution,Operating Expense,30000
+CC3002,2026-04-01,4000,Product Revenue,Revenue,300000
+CC3002,2026-04-01,4100,Service & Calibration Revenue,Revenue,38000
+CC3002,2026-04-01,6100,Selling & Distribution,Operating Expense,30000
+CC3002,2026-05-01,4000,Product Revenue,Revenue,300000
+CC3002,2026-05-01,4100,Service & Calibration Revenue,Revenue,38000
+CC3002,2026-05-01,6100,Selling & Distribution,Operating Expense,30000
+CC3002,2026-06-01,4000,Product Revenue,Revenue,300000
+CC3002,2026-06-01,4100,Service & Calibration Revenue,Revenue,38000
+CC3002,2026-06-01,6100,Selling & Distribution,Operating Expense,30000
+CC4001,2026-01-01,6000,Research & Development,Operating Expense,150000
+CC4001,2026-01-01,5100,Direct Labour,Cost of Sales,65000
+CC4001,2026-02-01,6000,Research & Development,Operating Expense,150000
+CC4001,2026-02-01,5100,Direct Labour,Cost of Sales,65000
+CC4001,2026-03-01,6000,Research & Development,Operating Expense,150000
+CC4001,2026-03-01,5100,Direct Labour,Cost of Sales,65000
+CC4001,2026-04-01,6000,Research & Development,Operating Expense,150000
+CC4001,2026-04-01,5100,Direct Labour,Cost of Sales,65000
+CC4001,2026-05-01,6000,Research & Development,Operating Expense,150000
+CC4001,2026-05-01,5100,Direct Labour,Cost of Sales,65000
+CC4001,2026-06-01,6000,Research & Development,Operating Expense,150000
+CC4001,2026-06-01,5100,Direct Labour,Cost of Sales,65000
+CC4002,2026-01-01,4000,Product Revenue,Revenue,300000
+CC4002,2026-01-01,4100,Service & Calibration Revenue,Revenue,38000
+CC4002,2026-01-01,6100,Selling & Distribution,Operating Expense,30000
+CC4002,2026-02-01,4000,Product Revenue,Revenue,300000
+CC4002,2026-02-01,4100,Service & Calibration Revenue,Revenue,38000
+CC4002,2026-02-01,6100,Selling & Distribution,Operating Expense,30000
+CC4002,2026-03-01,4000,Product Revenue,Revenue,300000
+CC4002,2026-03-01,4100,Service & Calibration Revenue,Revenue,38000
+CC4002,2026-03-01,6100,Selling & Distribution,Operating Expense,30000
+CC4002,2026-04-01,4000,Product Revenue,Revenue,300000
+CC4002,2026-04-01,4100,Service & Calibration Revenue,Revenue,38000
+CC4002,2026-04-01,6100,Selling & Distribution,Operating Expense,30000
+CC4002,2026-05-01,4000,Product Revenue,Revenue,300000
+CC4002,2026-05-01,4100,Service & Calibration Revenue,Revenue,38000
+CC4002,2026-05-01,6100,Selling & Distribution,Operating Expense,30000
+CC4002,2026-06-01,4000,Product Revenue,Revenue,300000
+CC4002,2026-06-01,4100,Service & Calibration Revenue,Revenue,38000
+CC4002,2026-06-01,6100,Selling & Distribution,Operating Expense,30000
+CC9001,2026-01-01,6200,Administrative Expense,Operating Expense,200000
+CC9001,2026-02-01,6200,Administrative Expense,Operating Expense,200000
+CC9001,2026-03-01,6200,Administrative Expense,Operating Expense,200000
+CC9001,2026-04-01,6200,Administrative Expense,Operating Expense,200000
+CC9001,2026-05-01,6200,Administrative Expense,Operating Expense,200000
+CC9001,2026-06-01,6200,Administrative Expense,Operating Expense,200000

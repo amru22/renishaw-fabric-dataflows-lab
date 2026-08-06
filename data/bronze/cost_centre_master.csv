@@ -1,0 +1,13 @@
+cost_centre_id,cost_centre_name,division,region,country,cost_centre_manager
+CC1001,Metrology Systems - UK Manufacturing,Metrology Systems,UK,United Kingdom,A. Whitfield
+CC1002,Metrology Systems - Europe Sales,Metrology Systems,Europe,Germany,S. Okoro
+CC1003,Metrology Systems - Americas Sales,Metrology Systems,Americas,United States,L. Bergman
+CC1004,Analytical Instruments - UK R&D,Analytical Instruments,UK,United Kingdom,J. Patel
+CC1005,Analytical Instruments - APAC Sales,Analytical Instruments,Asia Pacific,Japan,M. Costa
+CC2001,Neuro Solutions - UK R&D,Neuro Solutions,UK,United Kingdom,R. Nakamura
+CC2002,Neuro Solutions - Americas Sales,Neuro Solutions,Americas,United States,E. Fischer
+CC3001,Additive Manufacturing - UK Production,Additive Manufacturing,UK,United Kingdom,T. Griffiths
+CC3002,Additive Manufacturing - Europe Sales,Additive Manufacturing,Europe,Germany,K. Yamamoto
+CC4001,Raman Spectroscopy - UK R&D,Raman Spectroscopy,UK,United Kingdom,D. Alonso
+CC4002,Raman Spectroscopy - APAC Sales,Raman Spectroscopy,Asia Pacific,Japan,A. Whitfield
+CC9001,Corporate Functions - UK Head Office,Corporate Functions,UK,United Kingdom,S. Okoro
