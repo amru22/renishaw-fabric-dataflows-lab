@@ -402,6 +402,157 @@ analyst's personal query" and "the group's trusted actual-vs-budget table".
 
 ---
 
+## Advanced Extensions (Optional)
+
+These three extensions are **optional add-ons**, not required to complete the core
+Bronze/Silver/Gold story above. Use them if time allows, or as a "what else is
+possible" close-out. Budget roughly 10–15 minutes total if you do all three. Each one
+builds directly on queries you've already created, so nothing new needs to be
+imported.
+
+> 🗣️ **Say this before starting:** *"Everything so far is what most teams need day
+> to day. But since we've got a bit more time, let me show you three features that
+> come up once your data preparation grows — reusable logic, matching messy text, and
+> making a dataflow flexible without duplicating it."*
+
+### Extension 1: Custom Functions — Turn Repeated Cleaning Steps into One Reusable Function
+
+**Why it matters for Renishaw:** in Step 4, you cleaned `cost_centre_name` and
+`description` using the same two operations (Trim, then Clean) applied twice, by
+hand. A **custom function** lets you write that logic once and re-use it on any
+column, in any query, in any dataflow — exactly what you'd want once Renishaw has
+more than a couple of source systems each needing the same text clean-up.
+
+* In `silver_finance_prep`, right-click in the blank space at the bottom of the
+  **Queries** pane → **New query** → **Blank query**.
+* Rename it to `fn_CleanText`.
+* On the **Home** tab, select **Advanced Editor** and replace the contents with:
+
+  ```
+  (inputText as any) as text =>
+      let
+          textValue = Text.From(inputText),
+          trimmed = Text.Trim(textValue),
+          cleaned = Text.Clean(trimmed)
+      in
+          cleaned
+  ```
+
+* Select **Done**. Notice the query's icon changes to `fx` in the Queries pane — Power
+  Query has recognised this as a **function**, not a table, so it won't try to load
+  it anywhere by itself.
+* Go to `gl_actuals_clean`. Select the `description` column.
+* On the **Add column** tab, select **Invoke Custom Function**.
+* **New column name:** `description_clean`. **Function query:** `fn_CleanText`.
+* Under **inputText**, choose **Column** and select `description`.
+* Select **OK** — a new `description_clean` column appears, already trimmed and
+  cleaned.
+* Repeat **Invoke Custom Function** for `cost_centre_name` (new column name
+  `cost_centre_name_clean`).
+* Remove the two original untreated columns and rename the `_clean` columns back to
+  `description` and `cost_centre_name` (right-click → **Remove**, then right-click
+  the `_clean` columns → **Rename**).
+
+**Explanation:** you've replaced two manual, one-off formatting steps with a single
+piece of logic that can now be invoked on *any* text column, in *any* query, in *any*
+dataflow you build later — a new source system with the same messy-text problem
+takes one click, not a rebuild.
+
+> 🗣️ **Say this:** *"This is where Power Query stops being just 'a series of clicks'
+> and starts behaving like a small code library. If Renishaw brings on a sixth
+> division next year with its own slightly messy ERP export, this exact function is
+> ready to reuse — no one has to remember or re-build the cleaning steps from
+> scratch."*
+
+### Extension 2: Fuzzy Merge — Matching Text That Doesn't Match Exactly
+
+**Why it matters for Renishaw:** Step 7 matched `gl_actuals_clean` to
+`cost_centre_master` using `cost_centre_id` — a clean, exact key. In the real world,
+not every system exports a clean ID; sometimes the only common field is a
+free-text name, and those names rarely match character-for-character across
+systems (extra spaces, "Sys" vs "Systems", different capitalisation — exactly the
+kind of thing baked into a few rows of `gl_actuals.csv` in this lab).
+
+* Still in `silver_finance_prep`, go to **Merge queries** as if repeating Step 7, but
+  this time select `cost_centre_name` as the join column on both sides (instead of
+  `cost_centre_id`).
+* In the bottom-left of the **Merge** dialog, tick **Use fuzzy matching to perform
+  the merge**.
+* Expand **Fuzzy matching options**:
+  * **Similarity threshold**: drag it down from `1.00` (exact match only) to around
+    `0.80` and explain that this is a slider between "must match exactly" and
+    "match almost anything".
+  * **Ignore case** and **Match by combining text parts** are both enabled by
+    default — point these out as the settings that let `"Metrology Systems - UK
+    Manufacturing  "` (with trailing spaces) still match `"Metrology Systems - UK
+    Manufacturing"`.
+* Select **OK** and look at the row count in the preview compared to the exact-match
+  version from Step 7 — with fuzzy matching, rows that previously failed to match
+  due to whitespace/casing differences now join successfully.
+* **You do not need to keep this query** — this is a "just to show it" moment. Select
+  **Remove** on this new merge step from the Applied Steps pane afterwards so the
+  main Silver query stays on the clean, exact `cost_centre_id` join used for the rest
+  of the lab.
+
+**Explanation:** fuzzy merge is not "on" by default because approximate matching
+should be a deliberate choice, not an accident — you don't want two genuinely
+different cost centres silently merged together. It's there for exactly the
+situation where the only common field across two systems is imperfect free text.
+
+> 🗣️ **Say this:** *"I want to be upfront that we don't use fuzzy matching in our
+> main pipeline today — a clean ID join is always safer where one's available. But
+> when the only thing two systems have in common is a name someone typed by hand,
+> this is the tool that saves you from a painful manual reconciliation exercise."*
+
+### Extension 3: Dataflow Parameters — One Dataflow, Multiple Scenarios
+
+**Why it matters for Renishaw:** right now, `gold_finance_variance` always
+calculates variance across every division and every period in the source data. A
+**parameter** lets you turn a fixed dataflow into a flexible one — for example, "only
+show me this one division" or "only look from this cut-off date onwards" — by
+changing a single value, with no changes to any transformation step. (A colleague's
+session covers driving this from a **Data Pipeline** automatically; here we'll just
+show the parameter working manually inside the dataflow itself.)
+
+* In `gold_finance_variance`, on the **Home** tab, select **Manage parameters** →
+  **New parameter**.
+* Set:
+  * **Name:** `TargetDivision`
+  * **Type:** Text
+  * **Required:** Yes
+  * **Current Value:** `All`
+* Select **OK**. Notice `TargetDivision` now appears in the Queries pane under its
+  own **Parameters** group.
+* Select the `gold_actual_vs_budget` query. On the **Home** tab, select **Reduce
+  Rows** → **Filter Rows** (or right-click the `division` column header → **Text
+  Filters** → **Custom Filter**), and instead of a fixed value, add a **Custom
+  column** first:
+  * **Add column** → **Custom column** → name it `keep_row`.
+  * Formula: `if TargetDivision = "All" then true else [division] = TargetDivision`
+* Filter the `keep_row` column to keep only `TRUE`, then remove the helper
+  `keep_row` column.
+* Select **Save and run** once with the parameter left as `All` — confirm every
+  division still appears.
+* Now go back to **Manage parameters**, change `TargetDivision`'s **Current Value**
+  to `Metrology Systems`, and select **Save and run** again.
+* Open `gold_actual_vs_budget` in the Lakehouse and confirm only Metrology Systems
+  rows are now present. Change the parameter back to `All` afterwards so the
+  dataflow is left in its default state.
+
+**Explanation:** nothing about the transformation logic changed between those two
+runs — only the parameter value did. That's the difference between a one-off report
+and a genuinely reusable data product: the same dataflow can serve "give me
+everything" and "give me just Metrology Systems" without being rebuilt or
+duplicated.
+
+> 🗣️ **Say this:** *"This is the building block that makes automation possible.
+> Today I changed this value by hand, but the exact same parameter is what a
+> scheduled pipeline would set automatically — say, running this once per division
+> every month-end without anyone touching the dataflow itself. That orchestration
+> piece is what's being covered in the follow-up session."*
+
+---
+
 ## Recap Table
 
 | Layer | Item built | What it does | Renishaw value |
@@ -409,6 +560,7 @@ analyst's personal query" and "the group's trusted actual-vs-budget table".
 | Bronze | Files in `finance_lh` | Raw CSVs landed untouched | Audit trail back to source |
 | Silver | `silver_finance_prep` dataflow → `silver_gl_actuals`, `silver_cost_centre_master`, `silver_fx_rates` | Cleans text, removes duplicates, converts currency to GBP, enriches with division/region | One trusted, reusable, GBP-standardised transaction table |
 | Gold | `gold_finance_variance` dataflow → `gold_actual_vs_budget` | Aggregates actuals and budget by division/region/period, calculates variance | Decision-ready table for Power BI / FP&A reporting |
+| Advanced (optional) | `fn_CleanText` custom function, fuzzy merge demo, `TargetDivision` parameter | Reusable cleaning logic, approximate text matching, flexible single-dataflow scenarios | Shows the pipeline scales beyond a one-off build |
 
 ---
 

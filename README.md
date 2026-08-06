@@ -39,6 +39,11 @@ instruments).
    explaining where the engines diverge (compute location, refresh/orchestration,
    staging, connectors, scale limits) so Renishaw understands why Dataflows Gen2 is the
    right tool for shared, governed data preparation versus report-level shaping.
+5. **Advanced Extensions (optional)** — three short, optional add-ons for once the
+   core story is told: **custom functions** (reusable cleaning logic), **fuzzy merge**
+   (matching messy free-text keys), and **dataflow parameters** (one dataflow, multiple
+   scenarios, driven manually — orchestration via a Data Pipeline is left to a
+   follow-up session).
 
 ## How to run it
 
