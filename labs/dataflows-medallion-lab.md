@@ -59,10 +59,10 @@
 
 | File | Grain | Description |
 | --- | --- | --- |
-| `cost_centre_master.csv` | 1 row per cost centre | Dimension: cost centre → division, region, country, manager |
-| `fx_rates.csv` | 1 row per currency per month | Reference: monthly FX rate to GBP |
-| `gl_actuals.csv` | 1 row per GL transaction | Fact: actual revenue/cost postings by cost centre, account and month, in **local currency** |
-| `gl_budget.csv` | 1 row per budget line | Fact: monthly budget by cost centre and account, already in **GBP** |
+| `cost_centre_master.csv` | 1 row per cost centre. This is just a list of teams, where they are and who the manager is | Dimension: cost centre → division, region, country, manager |
+| `fx_rates.csv` | 1 row per currency per month. Currency conversion rates. Foreign exchange rates | Reference: monthly FX rate to GBP |
+| `gl_actuals.csv` | 1 row per GL transaction. The master record of every financial transaction of revenue coming in or going out | Fact: actual revenue/cost postings by cost centre, account and month, in **local currency** |
+| `gl_budget.csv` | 1 row per budget line. What was planned for comparison. | Fact: monthly budget by cost centre and account, already in **GBP** |
 
 **Explanation:** the actuals arrive in local currency (because that's how the local
 ERP posts them) but the budget is set centrally in GBP. That mismatch is deliberate —
