@@ -33,12 +33,17 @@
   separation between "what source systems gave us", "what we've cleaned and
   standardised" and "what the business actually reports on".
 
-> 🗣️ **Say this at the start:** *"Today I want to show you how Renishaw's finance
-> team could take raw GL exports from different systems, clean and standardise them
-> without writing code, and land a trusted actual-vs-budget table that refreshes
-> automatically and feeds straight into Power BI. We'll do this using a pattern
-> called medallion architecture, and a Fabric tool called Dataflows Gen2, which is
-> built on the same Power Query engine you already use in Power BI and Excel."*
+> ### 🗣️ SAY THIS
+>
+> *"Today I want to show you how Renishaw's finance team could take raw GL exports
+> from different systems, clean and standardise them without writing code, and land
+> a trusted actual-vs-budget table that refreshes automatically and feeds straight
+> into Power BI. We'll do this using a pattern called medallion architecture, and a
+> Fabric tool called Dataflows Gen2, which is built on the same Power Query engine
+> you already use in Power BI and Excel. By the end of this session you'll have seen
+> every layer of that pipeline built live, and you'll understand exactly which parts
+> of it your own team could take over and run themselves, without needing a
+> developer."*
 
 ---
 
@@ -88,12 +93,17 @@ exact duplicate transaction) so there's something real to clean during the demo.
 * Inside the workspace, select **New item** → search for and select **Lakehouse**.
 * Name it `finance_lh` and select **Create**.
 
-> 🗣️ **Say this:** *"A workspace in Fabric is a container for everything we build
-> today — it's how Renishaw would separate, say, a Finance workspace from an
-> Engineering or Manufacturing workspace, each with its own permissions. The
-> Lakehouse is where our data will actually live, on top of OneLake, which is
-> Fabric's single, open data lake — one copy of the data, usable by every Fabric
-> engine, whether that's Power BI, Spark, or a Warehouse."*
+> ### 🗣️ SAY THIS
+>
+> *"A workspace in Fabric is a container for everything we build today — it's how
+> Renishaw would separate, say, a Finance workspace from an Engineering or
+> Manufacturing workspace, each with its own permissions and its own people who can
+> see it. The Lakehouse is where our data will actually live, on top of OneLake,
+> which is Fabric's single, open data lake — one copy of the data, usable by every
+> Fabric engine, whether that's Power BI, Spark, or a Warehouse. That 'one copy'
+> point matters: today, the same finance numbers often get copied into three or four
+> different spreadsheets or systems, and they all quietly drift apart over time.
+> Here, everything downstream reads from this same place."*
 
 ### Step 2: Land the Raw CSVs into the Lakehouse (Bronze)
 
@@ -108,9 +118,16 @@ from source, with no transformation. We keep it because it's cheap, it's our aud
 trail back to source, and it means we can always rebuild Silver and Gold from
 scratch if a transformation rule changes.
 
-> 🗣️ **Say this:** *"Notice I haven't changed a single value yet. This is Bronze —
-> it's deliberately dumb. If finance ever asks 'where did this number originally
-> come from', we can always point back here."*
+> ### 🗣️ SAY THIS
+>
+> *"Notice I haven't changed a single value yet. This is Bronze — it's deliberately
+> dumb. We land the file exactly as it arrived, warts and all, before we touch
+> anything. If finance ever asks 'where did this number originally come from', or an
+> auditor asks us to prove we haven't silently altered a source figure, we can always
+> point back here and show the untouched original. It also means that if we ever
+> discover a mistake in how we cleaned or calculated something downstream, we haven't
+> lost anything — we can just rebuild Silver and Gold again from this same starting
+> point."*
 
 ---
 
@@ -129,10 +146,15 @@ allowed to build on.
 * Fabric opens the **Power Query** editor — this is the same visual, ribbon-driven
   editor used in Power BI Desktop and Excel's Get & Transform.
 
-> 🗣️ **Say this:** *"If you've ever used Get Data in Excel or Power BI, this screen
-> will look immediately familiar — it's the same Power Query engine and the same
-> ribbon. The difference is where it runs and what it's for, which I'll come back to
-> at the end."*
+> ### 🗣️ SAY THIS
+>
+> *"If you've ever used Get Data in Excel or Power BI, this screen will look
+> immediately familiar — it's the same Power Query engine and the same ribbon,
+> same menus, same idea of applying steps one at a time. The difference isn't the
+> tool you're looking at right now, it's where it runs and what it's for — a
+> Dataflow Gen2 runs independently in Fabric, not embedded inside one report, so it
+> can be reused and refreshed on its own schedule. I'll come back to that comparison
+> properly once we've built the whole pipeline, so you can see it in context."*
 
 ### Step 4: Bring in `gl_actuals` and Clean It
 
@@ -168,17 +190,25 @@ standardising text casing, removing an exact duplicate and filling a blank field
 a sensible default. None of this changed the meaning of the data; it made it
 consistent enough to trust downstream.
 
-> 🗣️ **Say this:** *"This is the boring-but-critical part of any finance
-> consolidation — and it's exactly the kind of thing that normally lives in someone's
-> personal Excel macro. Here it's visual, it's documented step by step in the
-> Applied Steps pane on the right, and anyone on the team can open this dataflow and
-> see exactly what was done and why."*
+> ### 🗣️ SAY THIS
+>
+> *"This is the boring-but-critical part of any finance consolidation — and it's
+> exactly the kind of thing that normally lives in someone's personal Excel macro,
+> or a rule that only one person on the team actually remembers. Here it's visual,
+> it's documented step by step in the Applied Steps pane on the right, and anyone on
+> the team can open this dataflow and see exactly what was done and why, without
+> needing to ask the original author. That's a governance win as much as a technical
+> one — if that person leaves the team, the logic doesn't leave with them."*
 
 * Point at the **Applied Steps** pane on the right-hand side.
 
-> 🗣️ **Say this:** *"Every single click I've made is recorded here as a step, in
-> plain English, in order. This is what makes Power Query so auditable — nothing
-> happens silently."*
+> ### 🗣️ SAY THIS
+>
+> *"Every single click I've made is recorded here as a step, in plain English, in
+> order. This is what makes Power Query so auditable — nothing happens silently.
+> You can click back through this list to see exactly what the data looked like
+> before and after any single step, which is invaluable if a number ever looks wrong
+> and you need to work out at which point it changed."*
 
 ### Step 5: Bring in the Reference Tables
 
@@ -227,10 +257,15 @@ spreadsheet — matching each transaction's currency and month to the right rate
 multiplying it out — but it's now a repeatable, refreshable, auditable step instead
 of a one-off exercise redone every month.
 
-> 🗣️ **Say this:** *"This is the moment I want you to picture your month-end
-> currency conversion process. Instead of VLOOKUPs across tabs, or a script someone
-> maintains locally, this is one visual merge step that will re-run identically every
-> time this dataflow refreshes."*
+> ### 🗣️ SAY THIS
+>
+> *"This is the moment I want you to picture your month-end currency conversion
+> process. Instead of VLOOKUPs across tabs, or a script someone maintains locally on
+> their own laptop, this is one visual merge step that will re-run identically every
+> time this dataflow refreshes. Whoever owns this dataflow can update the FX rates
+> table next month, hit refresh, and every downstream number recalculates
+> automatically — no one has to remember to redo this by hand, and no one can
+> accidentally use last month's rate."*
 
 ### Step 7: Enrich Actuals with Cost Centre Attributes
 
@@ -264,11 +299,16 @@ into a **persisted, reusable table** other people and other tools can query — 
 what separates a Dataflow Gen2 from Power Query used only inside a single Power BI
 report.
 
-> 🗣️ **Say this:** *"Now this Silver table lives in the Lakehouse. It's not locked
-> inside my dataflow or inside one Power BI report — a warehouse, a notebook, another
-> dataflow, or a completely different Power BI report can all read `silver_gl_actuals`
-> straight away. That reuse is the biggest structural difference from Power Query in
-> Power BI Desktop, which I'll show you at the end."*
+> ### 🗣️ SAY THIS
+>
+> *"Now this Silver table lives in the Lakehouse. It's not locked inside my dataflow
+> or inside one Power BI report — a warehouse, a notebook, another dataflow, or a
+> completely different Power BI report can all read `silver_gl_actuals` straight
+> away, with no copy-pasting and no re-building the same cleaning logic somewhere
+> else. That reuse is the biggest structural difference from Power Query in Power BI
+> Desktop, which I'll show you properly once we've finished the Gold layer. Think of
+> this as the moment the data stops being 'my query' and starts being 'the
+> business's table'."*
 
 ---
 
@@ -337,11 +377,15 @@ immediately see where spend or revenue is ahead or behind budget, in the group
 reporting currency, without needing to know anything about FX rates, cost centre
 codes or which ERP the number originally came from.
 
-> 🗣️ **Say this:** *"This is the payoff. Three source files that started life in
-> different systems, different currencies and different naming conventions have
-> become one clean, governed table that answers a real finance question:
-> 'are we on budget?' And it will refresh on whatever schedule Renishaw sets, without
-> anyone re-doing this work by hand."*
+> ### 🗣️ SAY THIS
+>
+> *"This is the payoff. Three source files that started life in different systems,
+> different currencies and different naming conventions have become one clean,
+> governed table that answers a real finance question: 'are we on budget?' And it
+> will refresh on whatever schedule Renishaw sets, without anyone re-doing this work
+> by hand every month. If a new month of actuals lands in Bronze tomorrow, this
+> entire Silver-to-Gold journey — cleaning, currency conversion, enrichment,
+> aggregation, variance — replays automatically the next time it refreshes."*
 
 ### Step 14: Set the Gold Output Destination
 
@@ -359,9 +403,15 @@ codes or which ERP the number originally came from.
 * Sort or filter by `variance_pct` to show the biggest overspends/underspends by
   division.
 
-> 🗣️ **Say this:** *"If we had time today, this is exactly the table I'd plug
-> straight into a Power BI report — one visual for actual vs budget by division, one
-> for the trend by month. That's normally the next session."*
+> ### 🗣️ SAY THIS
+>
+> *"If we had time today, this is exactly the table I'd plug straight into a Power
+> BI report — one visual for actual vs budget by division, one for the trend by
+> month, maybe a matrix broken down by region. That's normally the next session.
+> The point I want to leave you with here is that all of that reporting work becomes
+> much easier and much more trustworthy once it's sitting on top of a single, clean,
+> pre-aggregated Gold table like this one, rather than each report author having to
+> re-derive variance logic themselves."*
 
 ---
 
@@ -371,10 +421,15 @@ This is a natural point to step back from the click-through and have a conversat
 about **why** Renishaw would use Dataflows Gen2 rather than just building this logic
 as Power Query steps inside a Power BI Desktop report.
 
-> 🗣️ **Say this:** *"Everything we just did — merges, group by, custom columns,
-> replace values — you can do all of that inside Power BI Desktop's Power Query
-> Editor too. So why bother with a separate Dataflow? Let me show you where they
-> diverge."*
+> ### 🗣️ SAY THIS
+>
+> *"Everything we just did — merges, group by, custom columns, replace values — you
+> can do all of that inside Power BI Desktop's Power Query Editor too. So why bother
+> with a separate Dataflow? It comes down to where the logic and the data end up
+> living once you're done. In Power BI Desktop, all of that transformation logic is
+> baked into one report file, on one person's machine. Here, it's a standalone
+> item, sitting in the Fabric workspace, that anything else can plug into. Let me
+> show you where the two genuinely diverge."*
 
 | Aspect | Power Query in **Power BI Desktop** | Power Query in **Fabric (Dataflow Gen2)** |
 | --- | --- | --- |
@@ -395,10 +450,15 @@ convenience into a governed, reusable, schedulable **data product** that lives
 independently in OneLake. For Renishaw, that's the difference between "the finance
 analyst's personal query" and "the group's trusted actual-vs-budget table".
 
-> 🗣️ **Say this to close:** *"So the short version: same Power Query skills your
-> team already has from Power BI and Excel, but Dataflows Gen2 turn that into
-> something Renishaw's whole data estate can rely on — refreshed on schedule, sitting
-> in one place in OneLake, governed like any other Fabric item."*
+> ### 🗣️ SAY THIS
+>
+> *"So the short version: same Power Query skills your team already has from Power
+> BI and Excel, but Dataflows Gen2 turn that into something Renishaw's whole data
+> estate can rely on — refreshed on schedule, sitting in one place in OneLake,
+> governed like any other Fabric item. You don't need to throw away anything your
+> team already knows to get there; you just need to move the transformation out of
+> an individual report and into a shared, reusable layer. That's really the whole
+> pitch behind medallion architecture on Fabric."*
 
 ---
 
@@ -410,10 +470,15 @@ possible" close-out. Budget roughly 10–15 minutes total if you do all three. E
 builds directly on queries you've already created, so nothing new needs to be
 imported.
 
-> 🗣️ **Say this before starting:** *"Everything so far is what most teams need day
-> to day. But since we've got a bit more time, let me show you three features that
-> come up once your data preparation grows — reusable logic, matching messy text, and
-> making a dataflow flexible without duplicating it."*
+> ### 🗣️ SAY THIS
+>
+> *"Everything so far is what most teams need day to day. But since we've got a bit
+> more time, let me show you three features that come up once your data preparation
+> grows beyond a handful of source files — reusable logic so you're not repeating
+> yourself, matching messy free-text when a clean ID isn't available, and making a
+> single dataflow flexible enough to serve more than one scenario without
+> duplicating it. None of these are required to get value from Dataflows Gen2 — think
+> of them as 'what's possible once you're comfortable with the basics'."*
 
 ### Extension 1: Custom Functions — Turn Repeated Cleaning Steps into One Reusable Function
 
@@ -458,11 +523,14 @@ piece of logic that can now be invoked on *any* text column, in *any* query, in 
 dataflow you build later — a new source system with the same messy-text problem
 takes one click, not a rebuild.
 
-> 🗣️ **Say this:** *"This is where Power Query stops being just 'a series of clicks'
-> and starts behaving like a small code library. If Renishaw brings on a sixth
-> division next year with its own slightly messy ERP export, this exact function is
-> ready to reuse — no one has to remember or re-build the cleaning steps from
-> scratch."*
+> ### 🗣️ SAY THIS
+>
+> *"This is where Power Query stops being just 'a series of clicks' and starts
+> behaving like a small code library. If Renishaw brings on a sixth division next
+> year with its own slightly messy ERP export, this exact function is ready to
+> reuse — no one has to remember or re-build the cleaning steps from scratch, and if
+> we ever need to change the cleaning rule itself, we only have to change it in this
+> one place and every query that uses it picks up the fix automatically."*
 
 ### Extension 2: Fuzzy Merge — Matching Text That Doesn't Match Exactly
 
@@ -499,10 +567,16 @@ should be a deliberate choice, not an accident — you don't want two genuinely
 different cost centres silently merged together. It's there for exactly the
 situation where the only common field across two systems is imperfect free text.
 
-> 🗣️ **Say this:** *"I want to be upfront that we don't use fuzzy matching in our
-> main pipeline today — a clean ID join is always safer where one's available. But
-> when the only thing two systems have in common is a name someone typed by hand,
-> this is the tool that saves you from a painful manual reconciliation exercise."*
+> ### 🗣️ SAY THIS
+>
+> *"I want to be upfront that we don't use fuzzy matching in our main pipeline
+> today — a clean ID join is always safer where one's available, because it can
+> never accidentally join two different things together. But when the only thing
+> two systems have in common is a name someone typed by hand, this is the tool that
+> saves you from a painful manual reconciliation exercise in Excel, matching things
+> up row by row. The similarity threshold is your safety valve — the closer to 1.00
+> you keep it, the more conservative the matching, so you'd tune this carefully
+> rather than leaving it wide open."*
 
 ### Extension 3: Dataflow Parameters — One Dataflow, Multiple Scenarios
 
@@ -545,11 +619,16 @@ and a genuinely reusable data product: the same dataflow can serve "give me
 everything" and "give me just Metrology Systems" without being rebuilt or
 duplicated.
 
-> 🗣️ **Say this:** *"This is the building block that makes automation possible.
-> Today I changed this value by hand, but the exact same parameter is what a
-> scheduled pipeline would set automatically — say, running this once per division
-> every month-end without anyone touching the dataflow itself. That orchestration
-> piece is what's being covered in the follow-up session."*
+> ### 🗣️ SAY THIS
+>
+> *"This is the building block that makes automation possible. Today I changed this
+> value by hand, but the exact same parameter is what a scheduled pipeline would set
+> automatically — say, running this once per division every month-end without
+> anyone touching the dataflow itself, or letting a report page pass in whichever
+> division the user has selected. That orchestration piece is what's being covered
+> in the follow-up session, but the important thing to take away here is that
+> parameters are what turn a single dataflow into something that can serve many
+> different requests, rather than needing a separate copy built for each one."*
 
 ---
 
