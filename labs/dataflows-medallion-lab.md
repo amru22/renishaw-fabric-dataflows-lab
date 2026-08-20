@@ -192,13 +192,8 @@ consistent enough to trust downstream.
 
 > ### 🗣️ SAY THIS
 >
-> *"This is the boring-but-critical part of any finance consolidation — and it's
-> exactly the kind of thing that normally lives in someone's personal Excel macro,
-> or a rule that only one person on the team actually remembers. Here it's visual,
-> it's documented step by step in the Applied Steps pane on the right, and anyone on
-> the team can open this dataflow and see exactly what was done and why, without
-> needing to ask the original author. That's a governance win as much as a technical
-> one — if that person leaves the team, the logic doesn't leave with them."*
+> *"Here it's visual,it's documented step by step in the Applied Steps pane on the right, and anyone on
+> the team can open this dataflow and see exactly what was done and why, without needing to ask the original author. That's a governance win as much as a technical one — if that person leaves the team, the logic doesn't leave with them."*
 
 * Point at the **Applied Steps** pane on the right-hand side.
 
@@ -304,11 +299,7 @@ report.
 > *"Now this Silver table lives in the Lakehouse. It's not locked inside my dataflow
 > or inside one Power BI report — a warehouse, a notebook, another dataflow, or a
 > completely different Power BI report can all read `silver_gl_actuals` straight
-> away, with no copy-pasting and no re-building the same cleaning logic somewhere
-> else. That reuse is the biggest structural difference from Power Query in Power BI
-> Desktop, which I'll show you properly once we've finished the Gold layer. Think of
-> this as the moment the data stops being 'my query' and starts being 'the
-> business's table'."*
+> away, no re-building the same cleaning logic somewhere else. That reuse is the biggest structural difference from Power Query in Power BI Desktopr. Think of this as the moment the data stops being 'my query' and starts being 'the business's table'."*
 
 ---
 
