@@ -16,7 +16,7 @@ instruments).
 ├── README.md                     <- you are here
 ├── generate_data.py               <- script used to synthesize the source CSVs (for reference)
 ├── labs/
-│   └── dataflows-medallion-lab.md <- the full, prescriptive lab guide + presenter notes
+│   └── dataflows-medallion-lab.md <- the full, prescriptive lab guide 
 ├── data/
 │   └── bronze/
 │       ├── cost_centre_master.csv <- dimension: cost centre -> division/region/manager
@@ -48,9 +48,7 @@ instruments).
 ## How to run it
 
 Open [`labs/dataflows-medallion-lab.md`](labs/dataflows-medallion-lab.md) and follow it
-top to bottom. Each step tells you exactly what to click, and each step has a **🗣️
-Talk track** callout with suggested narration for the live demo.
-
+top to bottom. 
 ## Prerequisites
 
 *   A Microsoft Fabric tenant/trial with capacity assigned, and permission to create a
